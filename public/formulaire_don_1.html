@@ -50,7 +50,49 @@
             Montant personnalisé: <input type="number" name="montantPersonnalise" step="any">
         </label>
     </section>
-
+    <section id="donateur-info">
+        <h2>Partagez Vos Coordonnées</h2>
+        <label>
+            Prénom et Nom: <input type="text" name="prenomNom">
+        </label>
+        <label>
+            Adresse e-mail: <input type="email" name="email">
+        </label>
+        <label>
+            Adresse postale: <input type="text" name="adresse">
+        </label>
+        <label>
+            Numéro de téléphone: <input type="tel" name="telephone">
+        </label>
+    </section>
+    <section id="paiement-info">
+        <h2>Sélectionnez Votre Mode de Paiement</h2>
+        <label>
+            <input type="radio" name="methodePaiement" value="carte" checked>
+            Carte de Crédit
+        </label>
+        <label>
+            <input type="radio" name="methodePaiement" value="paypal">
+            PayPal
+        </label>
+        <label>
+            <input type="radio" name="methodePaiement" value="virement">
+            Virement Bancaire
+        </label>
+        <h2>Informations de Paiement</h2>
+        <label>
+            Titulaire de la Carte: <input type="text" name="titulaireCarte">
+        </label>
+        <label>
+            Numéro de Carte: <input type="text" name="numeroCarte">
+        </label>
+        <label>
+            Date d'Expiration: <input type="text" name="dateExpiration">
+        </label>
+        <label>
+            Code de Sécurité: <input type="text" name="codeSecurite">
+        </label>
+    </section>
     <section id="confirmation">
         <h2>Confirmez Votre Contribution</h2>
         <button id="confirmerPage1" class="bouton bouton--active" type="button">Confirmer le Don</button>
