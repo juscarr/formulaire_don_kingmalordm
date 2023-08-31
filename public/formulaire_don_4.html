@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8"/>
+    <title>Formulaire de Don en Ligne - Page 4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="liaisons/css/styles.css" rel="stylesheet">
+</head>
+
+<body class="conteneur">
+<header>
+    <h1>Sérénité</h1>
+    <p>Choisissez l'organisme Sérénité pour apporter un soutien significatif aux individus et aux familles qui souhaitent mieux préparer la transition vers la fin de vie.</p>
+    <p>Votre don contribuera à faciliter la gestion des actifs, possessions et informations importantes, garantissant une transition en douceur dans ces moments délicats.</p>
+</header>
+<main>
+    <section id="don-type">
+        <h2>Choisissez Votre Contribution</h2>
+        <label>
+            <input type="radio" name="donType" value="unique" checked>
+            Don Unique
+        </label>
+        <label>
+            <input type="radio" name="donType" value="recurring">
+            Don Mensuel Récurrent
+        </label>
+        <h2>Choisissez Votre Montant de Don</h2>
+        <label>
+            Montants prédéfinis:
+            <select name="montantPredefini">
+                <option value="50">50 $</option>
+                <option value="100">100 $</option>
+                <option value="150">150 $</option>
+            </select>
+        </label>
+        <label>
+            Montant personnalisé: <input type="number" name="montantPersonnalise" step="any">
+        </label>
+
+    </section>
+    <section id="donateur-info">
+        <h2>Partagez Vos Coordonnées</h2>
+        <label>
+            Prénom et Nom: <input type="text" name="prenomNom">
+        </label>
+        <label>
+            Adresse e-mail: <input type="email" name="email">
+        </label>
+        <label>
+            Adresse postale: <input type="text" name="adresse">
+        </label>
+        <label>
+            Numéro de téléphone: <input type="tel" name="telephone">
+        </label>
+    </section>
+    <section id="paiement-info">
+        <h2>Sélectionnez Votre Mode de Paiement</h2>
+        <label>
+            <input type="radio" name="methodePaiement" value="carte" checked>
+            Carte de Crédit
+        </label>
+        <label>
+            <input type="radio" name="methodePaiement" value="paypal">
+            PayPal
+        </label>
+        <label>
+            <input type="radio" name="methodePaiement" value="virement">
+            Virement Bancaire
+        </label>
+        <h2>Informations de Paiement</h2>
+        <label>
+            Titulaire de la Carte: <input type="text" name="titulaireCarte">
+        </label>
+        <label>
+            Numéro de Carte: <input type="text" name="numeroCarte">
+        </label>
+        <label>
+            Date d'Expiration: <input type="text" name="dateExpiration">
+        </label>
+        <label>
+            Code de Sécurité: <input type="text" name="codeSecurite">
+        </label>
+    </section>
+    <section id="confirmation">
+        <h2>Confirmez Votre Contribution</h2>
+        <!-- Récapitulatif des informations -->
+        <button id="confirmer" type="button">Confirmer le Don</button>
+    </section>
+</main>
+<footer>
+    <!-- Pied de page -->
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

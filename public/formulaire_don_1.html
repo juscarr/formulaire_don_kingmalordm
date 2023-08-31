@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8"/>
+    <title>Formulaire de Don en Ligne - Page 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="liaisons/css/styles.css" rel="stylesheet">
+</head>
+
+<body class="conteneur">
+<header>
+    <h1>Sérénité</h1>
+    <p>Choisissez l'organisme Sérénité pour apporter un soutien significatif aux individus et aux familles qui souhaitent mieux préparer la transition vers la fin de vie.</p>
+    <p>Votre don contribuera à faciliter la gestion des actifs, possessions et informations importantes, garantissant une transition en douceur dans ces moments délicats.</p>
+</header>
+<nav>
+    <ul class="pagination">
+        <li class="active" aria-current=""><a href="formulaire_don_1.html">Étape 1</a></li>
+        <li><a href="formulaire_don_2.html">Étape 2</a></li>
+        <li><a href="formulaire_don_3.html">Étape 3</a></li>
+    </ul>
+</nav>
+<main>
+    <section id="don-type">
+        <h2>Choisissez Votre Contribution</h2>
+        <label>
+            <input type="radio" name="donType" value="unique" checked required>
+            Don Unique
+        </label>
+        <label>
+            <input type="radio" name="donType" value="recurrent" required>
+            Don Mensuel Récurrent
+        </label>
+        <h2>Choisissez Votre Montant de Don</h2>
+        <label>
+            <input type="radio" name="montantPredefini" value="50" checked>
+            50 $
+        </label>
+        <label>
+            <input type="radio" name="montantPredefini" value="100">
+            100 $
+        </label>
+        <label>
+            <input type="radio" name="montantPredefini" value="150">
+            150 $
+        </label>
+        <label>
+            <input type="radio" name="montantPredefini" value="">
+            Montant personnalisé: <input type="number" name="montantPersonnalise" step="any">
+        </label>
+    </section>
+
+    <section id="confirmation">
+        <h2>Confirmez Votre Contribution</h2>
+        <button id="confirmerPage1" class="bouton bouton--active" type="button">Confirmer le Don</button>
+    </section>
+</main>
+<footer>
+
+</footer>
+<script src="script.js">
+    // document.addEventListener('DOMContentLoaded', function() {
+    //     const form = document.querySelector('form');
+    //
+    //     form.addEventListener('submit', function(event) {
+    //         const inputs = form.querySelectorAll('input[required]');
+    //
+    //         let isValid = true;
+    //         inputs.forEach(input => {
+    //             if (!input.value.trim()) {
+    //                 isValid = false;
+    //                 input.classList.add('error');
+    //             } else {
+    //                 input.classList.remove('error');
+    //             }
+    //         });
+    //
+    //         if (!isValid) {
+    //             event.preventDefault();
+    //         }
+    //     });
+    // });
+
+</script>
+</body>
+</html>

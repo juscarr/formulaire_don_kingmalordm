@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+/**
+ * @author Prenom Nom courriel
+ * @todo Lier les modules avec des instructions @import
+ * @todo Compléter selon l'énoncé de l'exercice
+ */
+
+/*
+ * ------------------
+ * TABLE DES MATIERES
+ * ------------------
+ * Librairies
+ ** Normalize
+ */
+ @import "../../../node_modules/normalize.scss/normalize.scss";
+ /*
+ * UTILITAIRES
+ ** Variables
+ ** Mixins
+ * BASE
+ ** Typographie
+ ** Hyperliens
+ ** Boutons
+ * MODULES
+ ** gds - Styles généraux du Guide de styles
+ ** palette - Palette de couleurs
+ ** listeInteractivite - Éléments interactifs
+ */
+
+/****** Librairies ******/
+
+/** Normalize **/
+
+
+/**** UTILITAIRES ****/
+
+/** Variables **/
+@import 'utilitaires/variables';
+
+/** Mixins **/
+@import 'utilitaires/mixins';
+
+/****** BASE ******/
+
+/** Typographie **/
+@import 'base/typo';
+@import 'base/grille';
+
+/** Hyperliens **/
+@import 'base/hyperlien';
+
+/** Boutons **/
+@import 'base/bouton';
+
+
+/** Navigation **/
+.pagination {
+ display: flex;
+ justify-content: space-between;
+ list-style-type: none;
+ padding: 0;
+}
+
+.pagination li {
+ flex: 1;
+ background-color: $vertLime;
+ text-align: center;
+ padding: 1em;
+ cursor: pointer;
+ transition: background-color 0.3s;
+}
+
+.pagination li.active {
+ background-color: $vertLime;
+}
+
+.pagination li:hover {
+ background-color: lighten($vertLime, 10%);
+}
